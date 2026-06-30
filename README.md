@@ -6,14 +6,15 @@ A DIY inertial electrostatic confinement (IEC) fusor designed for deuterium-deut
 
 ## main chamber
 
-Spherical stainless steel vacuum chamber, split at the equator into two hemispheres joined by an ISO-F flange. Each hemisphere has a **5-inch diameter mouth**. 
+Spherical stainless steel vacuum chamber, split at the equator into two hemispheres joined by an ISO-F flange. Each hemisphere has a **5-inch diameter mouth**. The 2 hemispheres will be connected by 8 bolts.
 
-The ports have been symmetrically distributed (3 per hemisphere) to maximize TIG welding clearance and simplify physical component layout.
+The ports have been symmetrically distributed to maximize TIG welding clearance and simplify physical component layout.
 
 ### hemisphere 1 (power & vacuum side)
 - **HV feedthrough** — negative, connects to inner grid (cathode); centered on top axis.
 - **Vacuum pump port** — KF-25 or KF-40 fitting pointing downward to the roughing/turbo pump manifold.
-- **Auxiliary/Spare port** — KF-16 flange, blanked off during normal operation (usable for vacuum system venting).
+- **atmo port** — KF-16 flange, blanked off during normal operation (usable for vacuum system venting).
+- - **Maitnance port** — KF-40 flange, used for samples or maitnance of reactor cage
 
 ### hemisphere 2 (diagnostics, gas, & view side)
 - **Viewport** — Borosilicate glass viewport for plasma observation (with external lead-glass X-ray shielding).
