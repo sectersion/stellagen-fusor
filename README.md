@@ -6,18 +6,21 @@ A DIY inertial electrostatic confinement (IEC) fusor designed for deuterium-deut
 
 ## main chamber
 
-Spherical stainless steel vacuum chamber, split at the equator into two hemispheres joined by an ISO-F flange. Each hemisphere has a **5-inch diameter mouth**.
+Spherical stainless steel vacuum chamber, split at the equator into two hemispheres joined by an ISO-F flange. Each hemisphere has a **5-inch diameter mouth**. 
 
-### hemisphere 1 (cathode side)
-- **HV feedthrough** — negative, connects to inner grid (cathode)
-- **Deuterium feed** — metered gas inlet with needle valve
-- **Vacuum pump port** — KF-25 or KF-40 fitting to roughing/turbo pump
-- **Vacuum gauge port** — external Pirani or thermocouple gauge (sensor tip exposed to chamber interior, electronics external)
+The ports have been symmetrically distributed (3 per hemisphere) to maximize TIG welding clearance and simplify physical component layout.
 
-### hemisphere 2 (anode side)
-- **Viewport** — borosilicate glass viewport for plasma observation
-- **External thermocouple** — monitors chamber wall temperature during runs
-- **2x copper water block** — direct-mount liquid cooling on exterior wall
+### hemisphere 1 (power & vacuum side)
+- **HV feedthrough** — negative, connects to inner grid (cathode); centered on top axis.
+- **Vacuum pump port** — KF-25 or KF-40 fitting pointing downward to the roughing/turbo pump manifold.
+- **Auxiliary/Spare port** — KF-16 flange, blanked off during normal operation (usable for vacuum system venting).
+
+### hemisphere 2 (diagnostics, gas, & view side)
+- **Viewport** — Borosilicate glass viewport for plasma observation (with external lead-glass X-ray shielding).
+- **Deuterium feed** — Metered gas inlet with needle valve to bleed process gas away from the main vacuum throat.
+- **Vacuum gauge port** — KF-16 flange hosting a Pirani or thermocouple gauge for clean chamber pressure monitoring.
+- **External thermocouple** — Monitors chamber wall temperature during runs.
+- **2x copper water block** — Custom concave-machined liquid cooling blocks direct-mounted to the exterior wall.
 
 > Note: The chamber wall itself serves as the anode and is grounded. No dedicated positive feedthrough is required.
 
@@ -45,8 +48,8 @@ Spherical stainless steel vacuum chamber, split at the equator into two hemisphe
 
 Active liquid cooling for sustained run capability, mounted on hemisphere 2.
 
-- **2x custom copper water blocks** direct-mounted to chamber exterior
-- Circulated via standard PC liquid cooling loop
+- **2x custom copper water blocks** with a 2.5-inch concave radius direct-mounted to chamber exterior
+- Circulated via standard PC liquid cooling loop (Reservoir → Pump → Heat Exchanger → Radiator → Reservoir)
 - **4-fan radiator** mounted externally on enclosure
 - Coolant: distilled water + corrosion inhibitor
 
@@ -58,12 +61,13 @@ Cooling is required at power inputs above ~500W to prevent chamber wall thermal 
 
 | Port | Hemisphere | Type | Purpose |
 |---|---|---|---|
-| HV feedthrough | H1 | Ceramic/PTFE | Cathode grid connection |
-| Gas inlet | H1 | KF-16 + needle valve | Deuterium feed |
-| Pump port | H1 | KF-25 or KF-40 | Vacuum system |
-| Gauge port | H1 | KF-16 | Pirani gauge |
-| Viewport | H2 | Borosilicate | Plasma observation |
-| Thermocouple | H2 | External surface mount | Wall temp monitoring |
+| **HV feedthrough** | H1 | Ceramic/PTFE | Cathode grid connection |
+| **Pump port** | H1 | KF-25 or KF-40 | Vacuum system throat |
+| **Aux/Spare port** | H1 | KF-16 | System venting / expansion |
+| **Viewport** | H2 | Borosilicate/Lead-Glass | Plasma observation |
+| **Gas inlet** | H2 | KF-16 + needle valve | Deuterium feed |
+| **Gauge port** | H2 | KF-16 | Pirani gauge chamber pressure |
+| **Thermocouple** | H2 | External surface mount | Wall temp monitoring |
 
 ---
 
@@ -71,7 +75,7 @@ Cooling is required at power inputs above ~500W to prevent chamber wall thermal 
 
 - All HV connections fused and interlocked
 - Enclosure grounded
-- Neutron and X-ray shielding required during deuterium runs
+- Neutron and X-ray shielding required during deuterium runs (Lead-glass viewport shroud mandatory)
 - Bleeder resistors on HV supply for safe discharge
 - Never operate above 10⁻² torr with HV applied
 
