@@ -3,6 +3,8 @@
 A DIY inertial electrostatic confinement (IEC) fusor designed for deuterium-deuterium fusion and neutron production. Named after Philo T. Farnsworth, the inventor of the fusor.
 
 ---
+Thank you to Fusion 360 and IdeaBuilder for your wonderful software!
+
 
 ## main chamber
 
